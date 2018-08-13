@@ -1,24 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// const tweeps = [
-//   {
-//     name: "Brendan Eich",
-//     twitter: "@BrendanEich",
-//     about: "Created JavaScript. Co-founded Mozilla and Firefox."
-//   },
-//   {
-//     name: "Dan Abramov",
-//     twitter: "@dan_abramov",
-//     about: "Working on React. Co-author of Redux and Create React App."
-//   },
-//   {
-//     name: "Addy Osmani",
-//     twitter: "@addyosmani",
-//     about: "Working on Google Chrome. Creator of TodoMVC and Yeoman."
-//   }
-// ];
-
 const Person = ({ person }) => {
   const name = person[0];
   const twitter = person[1].match(/\[(.*?)\]/)[1];
@@ -40,9 +22,7 @@ const Person = ({ person }) => {
 
 class Home extends React.Component {
   render() {
-    console.log(this.props.result);
     const tweeps = this.props.result;
-    window.tweeps = tweeps;
     return (
       <React.Fragment>
         <div className="persons">
