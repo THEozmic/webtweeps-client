@@ -10,7 +10,7 @@ body {
 
 .header,
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   user-select: none;
 }
@@ -27,6 +27,12 @@ body {
 }
 
 .footer {
+  background-color: #f3f7f9;
+  border-top: 1px solid #c8d4de;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
   &__item {
     border-bottom: 2px solid;
     color: #4a929c;
@@ -39,6 +45,7 @@ body {
 
 .root {
   padding: 20px;
+  padding-bottom: 100px;
 }
 
 .persons {
